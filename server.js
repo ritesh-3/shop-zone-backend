@@ -1,6 +1,6 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
-const initSocket = require("./socketPlugin");
+// const initSocket = require("./socketPlugin");
 
 // Handling uncaught Exception
 process.on("uncaughtException", (err) => {
@@ -27,7 +27,7 @@ const server = app.listen(process.env.PORT, () => {
 
 
 // Initialize socket controller
-initSocket(server);
+// initSocket(server);
 
 
 // unhandled promise rejection
