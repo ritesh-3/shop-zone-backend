@@ -21,7 +21,7 @@ const PROD_CONFIGS = {
     SERVER_BASE_URL: "https://shop-zone-dev.onrender.com",
     FRONTEND_BASE_URL: "https://shopzone-dev.web.app",
     ALLOWED_ORIGINS: ["https://shopzone-dev.web.app","https://shop-zone-seller.web.app"],
-    SELLER_ACTIVATION_URL_TEMPLATE: "https://shopzone-dev.web.app/seller/activation/${activationToken}",
+    SELLER_ACTIVATION_URL_TEMPLATE: "https://shop-zone-seller.web.app/seller/activation/${activationToken}",
     USER_ACTIVATION_URL_TEMPLATE: "https://shopzone-dev.web.app/activation/${activationToken}",
     BYPASS_EMAIL_VERIFICATION: "TRUE",
     FILE_UPLOAD_ROOT_FOLDER: 'uploads'
