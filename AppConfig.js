@@ -23,7 +23,7 @@ const PROD_CONFIGS = {
     ALLOWED_ORIGINS: ["https://shopzone-dev.web.app","https://shop-zone-seller.web.app"],
     SELLER_ACTIVATION_URL_TEMPLATE: "https://shop-zone-seller.web.app/seller/activation/${activationToken}",
     USER_ACTIVATION_URL_TEMPLATE: "https://shopzone-dev.web.app/activation/${activationToken}",
-    BYPASS_EMAIL_VERIFICATION: "TRUE",
+    BYPASS_EMAIL_VERIFICATION: "FALSE",
     FILE_UPLOAD_ROOT_FOLDER: 'uploads'
 }
 
