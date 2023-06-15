@@ -8,10 +8,11 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 const DEV_CONFIGS = {
     SERVER_BASE_URL: "http://localhost:8080",
     FRONTEND_BASE_URL: "http://localhost:5173",
+    COOKIE_DOMAIN:["localhost"],
     ALLOWED_ORIGINS: ["http://localhost:5173","http://localhost:5174","http://localhost:3000"],
     SELLER_ACTIVATION_URL_TEMPLATE: "http://localhost:5173/seller/activation/${activationToken}",
     USER_ACTIVATION_URL_TEMPLATE: "http://localhost:5173/activation/${activationToken}",
-    BYPASS_EMAIL_VERIFICATION: "TRUE",
+    BYPASS_EMAIL_VERIFICATION: "FALSE",
     FILE_UPLOAD_ROOT_FOLDER: 'uploads'
 
 }
@@ -20,6 +21,7 @@ const DEV_CONFIGS = {
 const PROD_CONFIGS = {
     SERVER_BASE_URL: "https://shop-zone-dev.onrender.com",
     FRONTEND_BASE_URL: "https://shopzone-dev.web.app",
+    COOKIE_DOMAIN: ["shopzone-dev.web.app","shop-zone-seller.web.app"],
     ALLOWED_ORIGINS: ["https://shopzone-dev.web.app","https://shop-zone-seller.web.app"],
     SELLER_ACTIVATION_URL_TEMPLATE: "https://shop-zone-seller.web.app/seller/activation/${activationToken}",
     USER_ACTIVATION_URL_TEMPLATE: "https://shopzone-dev.web.app/activation/${activationToken}",

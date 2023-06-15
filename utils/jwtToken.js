@@ -1,3 +1,6 @@
+const { AppConfigs } = require("../AppConfig");
+
+
 // create token and saving that in cookies
 const sendToken = (user, statusCode, res) => {
   const token = user.getJwtToken();
@@ -9,6 +12,7 @@ const sendToken = (user, statusCode, res) => {
     httpOnly: true,
     sameSite: "none",
     secure: true,
+    domain: AppConfigs().COOKIE_DOMAIN
   };
 
   res.status(statusCode).cookie("token", token, options).json({
