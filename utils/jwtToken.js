@@ -14,8 +14,8 @@ const sendToken = (user, statusCode, res) => {
     secure: true,
   };
 
-  if(user?.role === "user") options.domain = AppConfigs().COOKIE_DOMAIN
-  else if(user?.role === "Seller") options.domain = AppConfigs().SELLER_COOKIE_DOMAIN
+  // if(user?.role === "user") options.domain = AppConfigs().COOKIE_DOMAIN
+  // else if(user?.role === "Seller") options.domain = AppConfigs().SELLER_COOKIE_DOMAIN
 
 
   res.status(statusCode).cookie("token", token, options).json({
